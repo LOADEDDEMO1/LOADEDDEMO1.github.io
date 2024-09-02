@@ -1,0 +1,290 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.navbar {
+    background-color: #ffffff;
+    color: #0d8b3e;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 5px solid green;
+    
+}
+
+.navbar-left, .navbar-right {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-center {
+    flex-grow: 1;
+    text-align: center;
+} 
+
+.navbar-center h1 {
+    margin: 0 auto; /* Center the heading */
+    font-size: 50px; 
+    margin-left: 230px;
+}
+
+.logo img {
+    height: 40px; /* Adjust as needed */
+
+}
+
+.search-form {
+    display: flex;
+    align-items: center;
+    margin-right: 30px; 
+    
+}
+
+.search-form input[type="text"] {
+    padding: 5px;
+    border-radius: 3px;
+    border: none;
+}
+
+.search-form button {
+    background: none;
+    border: none;
+    cursor: pointer;
+} 
+
+.search-form button img{
+    height: 50px;
+} 
+.menu {
+    position: relative;
+    margin-left: 5px;
+    margin-right:30px;
+} 
+.menu img 
+{ 
+    height: 50px; /* Adjust as needed */
+}
+
+.menu .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgb(252, 250, 250);
+    z-index: 2;
+}
+
+.menu .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.menu .dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.menu:hover .dropdown-content {
+    display: block;
+} 
+
+.profile img {
+    height: 50px; /* Adjust as needed */
+    
+}
+
+.cards-section {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+} 
+
+.cards-section a{ 
+    text-decoration: none;
+}
+
+.card {
+    width: 280px; /* Increased card width */
+    height: 230px; /* Increased card height */
+    border: 5px solid #109e31;
+    border-radius: 5px;
+    padding: 10px;
+    margin-top: 20px;
+    margin-bottom: 5px;
+    overflow: hidden; /* Add overflow property */
+    text-align: center; /* Center align content */
+    background-color: rgb(183, 246, 183);
+}
+
+.card h2 {
+    font-size: 20px; /* Reduce font size for titles */
+    margin-bottom: 5px; /* Add margin bottom for titles */
+    color: rgb(10, 73, 10);
+    font-weight: 600;
+}
+
+.card p {
+    font-size: 16px; /* Reduce font size for paragraphs */
+    margin-bottom: 5px; /* Add margin bottom for paragraphs */
+    color: rgb(10, 73, 10);
+    font-weight: 600;
+}
+
+.card img {
+    width: 130px;
+    height: 130px;
+    margin-bottom: 10px;
+}
+
+.container {
+    text-align: center;
+    margin-top: 10px;
+}
+
+h1 {
+    font-size: 50px;
+    margin-bottom: 20px;
+    font-weight: 800;
+    color:#09511a;
+}
+
+table {
+    width: 90%;
+    margin: 0 auto;
+    border-collapse: collapse;
+    border-radius: 5px solid black;
+    background-color: #ffffff;
+}
+
+thead th, tbody td {
+    border: 1px solid #000000;
+    padding: 8px;
+    font-weight: 700;
+    height: 10px;
+    font-size: 20px;
+}
+
+thead th {
+    background-color: #15bc09;
+}
+
+tbody td {
+    text-align: center;
+    font-weight: 700;
+}
+
+.progress-bar {
+    width: 100px;
+    height: 10px;
+    background-color: #ddd;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+.progress-bar-fill {
+    height: 100%;
+    background-color: #4caf50;
+    border-radius: 5px;
+}
+
+
+.leaderboard, .analytics {
+    flex: 1;
+    padding: 20px;
+}
+
+
+
+.leaderboard h2, .analytics h2 {
+    text-align: center;
+    color: #0f5620;
+    font-size: 50px;
+}
+
+
+
+.leaderboard-item {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    border: 1px solid #0b0b0b;
+    background-color: #e0ffe0; /* Light green background */
+}
+
+.leaderboard-item:nth-child(2n) {
+    background-color: #c0f0c0; /* Darker green background */
+}
+
+
+
+.chart {
+    background-color: #bef4bc;
+    height: 500px; /* Adjust height as needed */
+    border: 5px solid #06710f;
+} 
+
+.chart img {
+    width: 60%; /* This will make the image take the full width of its parent */
+    height: 500px; /* This will maintain the aspect ratio of the image */
+    object-fit: cover; /* This will make sure the image scales nicely to fit its container */
+}
+
+.popup
+{ 
+    display: none; 
+    position: fixed; 
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    background-color: rgb(116, 196, 132); 
+    width: 300px; 
+    padding: 20px; 
+    border-radius: 10px; 
+    text-align: center; 
+    z-index: 1000;
+}
+
+.popup-content
+{ 
+    color: rgb(0, 0, 0); 
+} 
+
+.progress-bar
+{ 
+    background-color: #000000; 
+    height: 20px; 
+    border-radius: 10px; 
+    margin-top: 10px;
+} 
+
+.progress
+{ 
+    background-color: #ffffff; 
+    height: 100%; 
+    width: 0%; 
+    border-radius: 10px; 
+} 
+
+
+button#okayButton
+{ 
+    margin-top: 20px; 
+    padding: 10px 20px; 
+    border: none; 
+    border-radius: 5px solid black; 
+    background-color: #189d21; 
+    color: white; 
+    cursor: pointer; 
+    transition: background-color 0.3S ease;
+    font-weight: 800;
+} 
+
+button#okayButton:hover 
+{ 
+    background-color: #45a049;
+}

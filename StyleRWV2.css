@@ -1,0 +1,157 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px; /* Add left, right, and bottom margin */
+    padding: 20px; /* Add padding */
+}
+
+
+.navbar {
+    background-color: #ffffff;
+    color: #027b22;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    border-bottom: 3px solid green;
+}
+
+.loaded {
+    margin: 0 auto; /* Center the heading */
+    font-size: 60px; 
+    margin-left: 330px;
+    color: #027b22;
+}
+
+.logo img {
+    height: 50px; /* Adjust as needed */
+
+}
+
+.menu {
+    position: relative;
+    margin-left: 5px;
+    padding-right:15px;
+} 
+.menu img 
+{ 
+    height: 50px; /* Adjust as needed */
+}
+
+.menu .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgb(252, 250, 250);
+    z-index: 2;
+}
+
+.menu .dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.menu .dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.menu:hover .dropdown-content {
+    display: block;
+} 
+
+.profile img {
+    height: 60px; /* Adjust as needed */
+    
+}
+
+.main {
+    text-align: center;
+}
+
+.heading {
+    text-align: center; /* Center the heading */
+    margin-top: 50px;
+    margin-bottom: 40px; /* Add margin bottom for spacing */
+    font-size: 50px; 
+    color: green;
+}
+
+.cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 0 9px; /* Padding for the sides */
+    margin-bottom: 10px; /* Add bottom margin to prevent cut-off */
+    overflow-x: hidden; /* Remove horizontal scrollbar */
+    overflow-y: hidden; /* Remove vertical scrollbar */
+    margin-top: 50px;
+}
+
+.card {
+    width: calc(31.33% - 20px); /* Adjust card size with margin */
+    height: 225px; /* Adjust card height */
+    perspective: 1000px;
+    position: relative; /* Position relative for flipping effect */
+    background-color: rgb(93, 230, 93); /* Add background color to see spacing */
+    margin-bottom: 70px; /* Adjust spacing between rows */
+    padding: 5px; /* Padding for the container */
+}
+
+.card-front,
+.card-back {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    backface-visibility: hidden;
+    transition: transform 0.5s;
+}
+
+.card-front {
+    transform: rotateY(0deg);
+}
+
+.card-back {
+    transform: rotateY(180deg);
+}
+
+.card:hover .card-front {
+    transform: rotateY(-180deg);
+}
+
+.card:hover .card-back {
+    transform: rotateY(0deg);
+}
+
+.card img {
+    width: 100%;
+    height: 100%; /* Adjust image height */
+    object-fit: cover;
+}
+
+.card-back {
+    background-color: #333;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.card-back h2 {
+    margin-bottom: 6px;
+}
+
+.card-back h3 {
+    margin-bottom: 5px;
+    
+}
+
+.card-back p {
+    text-align: center;
+    font-size: 14px; /* Adjust font size */
+    margin: 0; /* Reset margin */
+}

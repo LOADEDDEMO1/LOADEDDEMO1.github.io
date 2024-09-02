@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="StyleTPV2.css">
+    <title>Tasks</title>
+</head>
+
+<body>
+
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <a href="https://nedbank.sharepoint.com/sites/nednews" class="logo">
+            <i class='bx bxs-flame'></i>
+            <div class="logo-name"><span>LOADED</span></div>
+        </a>
+        <ul class="side-menu">
+            <li><a href="#"><i class='bx bxs-dashboard'></i>Dashboard</a></li>
+            <li><a href="RewardsPageV2.html"><i class='bx bx-store-alt'></i>Victory Vista</a></li>
+            <li><a href="AchievementsPageV2.html"><i class='bx bxs-trophy' ></i></i>Glory Gallery</a></li>
+            <li class="active"><a href="HonorIconsV2.html"><i class='bx bx-analyse'></i>Honor Icon</a></li>
+            <li><a href="GoingTheExtraMileV2.html"><i class='bx bxs-medal' ></i>Milestone Marvels</a></li>
+            <li><a href="ProfilePageV2.html"><i class='bx bx-group'></i>Profile</a></li>
+            <li><a href="Hompage.html"><i class='bx bxs-home'></i>Home</a></li>
+        </ul>
+        <ul class="side-menu">
+            <li>
+                <a href="WelcomePageV22.html" class="logout">
+                    <i class='bx bx-log-out-circle'></i>
+                    Logout
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!-- End of Sidebar -->
+
+    <!-- Main Content -->
+    <div class="content">
+        <!-- Navbar -->
+        <nav>
+            <i class='bx bx-menu'></i>
+            <form action="#">
+                <div class="form-input">
+                    <input type="search" placeholder="Search...">
+                    <button class="search-btn" type="submit"><i class='bx bx-search'></i></button>
+                </div>
+            </form>
+            <input type="checkbox" id="theme-toggle" hidden>
+            <label for="theme-toggle" class="theme-toggle"></label>
+            <a href="#" class="notif">
+                <i class='bx bx-bell'></i>
+                <span class="count">12</span>
+            </a>
+            <a href="ProfilePageV2.html" class="profile">
+                <img src="avatar7.png">
+            </a>
+        </nav>
+
+        <!-- End of Navbar -->
+
+        <main>
+            <div class="header">
+                <div class="left">
+                    <h1>Dashboard</h1>
+                    <ul class="breadcrumb">
+                        <li><a href="#">
+                                Goal Galaxy
+                            </a></li>
+                        /
+                        <li><a href="TasksPageV2.html" class="active">Success Saga</a></li>
+                    </ul>
+                </div>
+                
+            </div>
+
+            <!-- Insights -->
+            <ul class="insights">
+                <li>
+                    <i class='bx bx-calendar-check'></i>
+                    <span class="info">
+                        <h3>
+                            20
+                        </h3>
+                        <p>Tasks</p>
+                    </span>
+                </li>
+                <li><i class='bx bx-show-alt'></i>
+                    <span class="info">
+                        <h3>
+                            15
+                        </h3>
+                        <p>Completed Tasks</p>
+                    </span>
+                </li>
+                <li><i class='bx bx-line-chart'></i>
+                    <span class="info">
+                        <h3>
+                            1000
+                        </h3>
+                        <p>points</p>
+                    </span>
+                </li>
+                <li><i class='bx bx-dollar-circle'></i>
+                    <span class="info">
+                        <h3>
+                            2
+                        </h3>
+                        <p>Rewards</p>
+                    </span>
+                </li>
+            </ul>
+            <!-- End of Insights -->
+
+            <div class="bottom-data">
+                <div class="orders">
+                    <div class="header">
+                        <i class='bx bx-receipt'></i>
+                        <h3>Leader Board</h3>
+                        <i class='bx bx-filter'></i>
+                        <i class='bx bx-search'></i>
+                    </div>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Users</th>
+                                <th>Date</th>
+                                <th>Status</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>
+                                    <img src="avatar6.png">
+                                    <p>John Stone</p>
+                                </td>
+                                <td>25-06-2024</td>
+                                <td><span class="status completed">Completed</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="avatar3.png">
+                                    <p>Danny Smith</p>
+                                </td>
+                                <td>25-06-2024</td>
+                                <td><span class="status pending">Pending</span></td>
+                            </tr>
+                            <tr>
+                                <td>
+                                    <img src="avatar12.png">
+                                    <p>Ava Silva</p>
+                                </td>
+                                <td>25-06-2024</td>
+                                <td><span class="status process">Processing</span></td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+
+                <!-- Reminders -->
+                <div class="reminders">
+                    <div class="header">
+                        <i class='bx bx-note'></i>
+                        <h3>Remiders</h3>
+                        <i class='bx bx-filter'></i>
+                        <i class='bx bx-plus'></i>
+                    </div>
+                    <ul class="task-list">
+                        <li class="completed">
+                            <div class="task-title">
+                                <i class='bx bx-check-circle'></i>
+                                <p>Start Our Meeting</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="completed">
+                            <div class="task-title">
+                                <i class='bx bx-check-circle'></i>
+                                <p>Analyse systems</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                        <li class="not-completed">
+                            <div class="task-title">
+                                <i class='bx bx-x-circle'></i>
+                                <p>Play Company Football</p>
+                            </div>
+                            <i class='bx bx-dots-vertical-rounded'></i>
+                        </li>
+                    </ul>
+                </div>
+
+                <!-- End of Reminders-->
+
+            </div>
+
+        </main>
+
+    </div>
+
+    <script src="TaskPageV2.js"></script>
+</body>
+
+</html> 
